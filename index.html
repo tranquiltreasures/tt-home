@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YourBrand - Welcome</title>
+    <style>
+        /* Original CSS Aesthetics */
+        body {
+            background-color: #000;
+            color: #00FF00;
+            font-family: "Courier New", Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #111;
+            color: #00FF00;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #222;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #00FF00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        h1, h2, h3 {
+            color: #00FF00;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .intro, .section, .products, .order, .contact {
+            margin: 40px 0;
+        }
+        .section p, .intro p, .contact p, .order p {
+            font-size: 1.1em;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product {
+            flex: 1 1 calc(30% - 20px);
+            box-sizing: border-box;
+            margin: 10px;
+            background-color: #111;
+            padding: 20px;
+            border: 1px solid #00FF00;
+        }
+        .product h3 {
+            margin-top: 0;
+        }
+        .email-policy ul, .order-template ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .quote {
+            font-style: italic;
+            text-align: center;
+            margin: 40px 0;
+            color: #FFD700;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        /* ASCII Art Styling */
+        .ascii-art {
+            font-family: "Courier New", Courier, monospace;
+            color: #00FF00;
+            text-align: center;
+            white-space: pre;
+            font-size: 14px;
+            line-height: 1.2;
+        }
+        /* Order Template Styling */
+        .order-template {
+            background-color: #111;
+            padding: 20px;
+            border: 1px solid #00FF00;
+        }
+        .order-template h3 {
+            color: #00FF00;
+            margin-top: 20px;
+        }
+        .order-template pre {
+            background-color: #000;
+            color: #00FF00;
+            padding: 10px;
+            border: 1px solid #00FF00;
+            overflow: auto;
+        }
+        .order-template p, .order-template ul {
+            font-size: 1.1em;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .products {
+                flex-direction: column;
+            }
+            .product {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Tranquil Treasures</h1>
+</header>
+
+<nav>
+    <a href="#professionalism">Professionalism</a>
+    <a href="#reputation">Reputation</a>
+    <a href="#quality">Quality</a>
+    <a href="#products">Products</a>
+    <a href="#order">Place an Order</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+    <section class="intro">
+        <p><strong>Make yourself at home...</strong></p>
+        <p>Discover our carefully curated selection of products, essential ordering information, and ways to contact us. We take our business very seriously, and while some of our protocols may seem excessive, please understand they are in place for a reason. <strong>Ensuring both your security and ours is our top priority.</strong></p>
+    </section>
+
+    <section id="professionalism" class="section">
+        <h2>Professionalism and Distinction</h2>
+        <p>We take pride in treating our customers with the utmost <strong>respect and integrity</strong>. By offering only high-quality products and avoiding hard-selling tactics, we ensure that both our business and our customers are valued. Our goal is to continuously improve and achieve <strong>customer satisfaction</strong>, allowing our reputation to speak for itself.</p>
+    </section>
+
+    <section id="reputation" class="section">
+        <h2>Reputation and Trust</h2>
+        <p>Our journey has been shaped by <strong>customer loyalty</strong> and exceptional service quality. We are committed to maintaining the trust we've earned from our clientele by safeguarding our reputation and respecting the <strong>privacy and safety</strong> of our customers. <strong>Transparent and open communication</strong> is fundamental to us because we deeply value your choice to partner with us.</p>
+    </section>
+
+    <section id="quality" class="section">
+        <h2>Quality of Service</h2>
+        <p><strong>Integrity and dedication</strong> distinguish us from the rest. From our carefully curated selection to the services we provide, we prioritize excellence in every aspect. We stand firmly behind our services and uphold our core values for the benefit of our clients. Our passion for our products drives us to deliver <strong>exceptional service consistently</strong>.</p>
+    </section>
+
+    <section id="products" class="products">
+<h1>Welcome to our <h class="keyword bold">M E N U</h>.</h1>
+      <!-- horizontal rule -->
+      <hr>
+       <!-- T-Shirts Section -->
+    <section>
+        <h3>T-Shirts</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Color</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>White Y21</td>
+                    <td>100</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>White Y21</td>
+                    <td>250</td>
+                    <td>$440</td>
+                </tr>
+                <tr>
+                    <td>White Y21</td>
+                    <td>500</td>
+                    <td>$750</td>
+                </tr>
+                <tr>
+                    <td>Blue B707</td>
+                    <td>100</td>
+                    <td>$250</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Purple MoonRocks Section -->
+    <section>
+        <h3>Purple MoonRocks (Pure M)</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Weight</th>
+                    <th>Price</th>
+                    <th>Price per Gram</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2g</td>
+                    <td>$100</td>
+                    <td>$50/g</td>
+                </tr>
+                <tr>
+                    <td>5g</td>
+                    <td>$215</td>
+                    <td>$43/g</td>
+                </tr>
+                <tr>
+                    <td>10g</td>
+                    <td>$380</td>
+                    <td>$38/g</td>
+                </tr>
+                <tr>
+                    <td>20g</td>
+                    <td>$660</td>
+                    <td>$33/g</td>
+                </tr>
+                <tr>
+                    <td>25g</td>
+                    <td>$785</td>
+                    <td>$31.4/g</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Dream Xtals Section -->
+    <section>
+        <h3>Dutch Med-Grade S-ISO</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Weight</th>
+                    <th>Price</th>
+                    <th>Price per Gram</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2g</td>
+                    <td>$100</td>
+                    <td>$50/g</td>
+                </tr>
+                <tr>
+                    <td>5g</td>
+                    <td>$215</td>
+                    <td>$43/g</td>
+                </tr>
+                <tr>
+                    <td>10g</td>
+                    <td>$380</td>
+                    <td>$38/g</td>
+                </tr>
+                <tr>
+                    <td>20g</td>
+                    <td>$660</td>
+                    <td>$33/g</td>
+                </tr>
+                <tr>
+                    <td>25g</td>
+                    <td>$785</td>
+                    <td>$31.4/g</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Pink 🍓 Section -->
+    <section>
+        <h3>Pink 🍓 LAVADA</h3>
+        <p class="highlight">$45 per gram at any quantity</p>
+    </section>
+
+
+    </section>
+
+    <!-- New Order Template Section -->
+        <h2>How to Place an Order</h2>
+    <ul>
+        <li>1) Your message/order submission MUST either be in a Privnote (<a href="https://privnote.com">https://privnote.com</a>) or be in PGP-encrypted ciphertext or it will not go through for security reasons.</li>
+        <li>2) Product Ordered and Quantity.</li>
+        <li>3) Date of Purchase.</li>
+        <li>4) Amount Paid in USD through our gateway.</li>
+        <li>5) Full First Name and Full Last Name [no abbreviations, no fake names].</li>
+        <li>6) You MUST provide the Order ID given to you after sending payment through our processor.</li>
+        <li>7) Address according to USPS [please double-check your address]. Don't forget your apartment number!</li>
+         <pre>
+[Name]
+[Street Address]
+[City, State/Province]
+[ZIP/Postal Code]
+[Country]
+            </pre>
+        <li>8) We will not ship to hotels or motel addresses.</li>
+        <li>9) Optional: leave an email address in case we need to contact you.</li>
+        <li>10) Optional: leave your Public PGP key in case we need to contact you.</li>
+    </ul>
+
+   <h2>Payment Gateway</h2>
+<iframe src="https://trocador.app/anonpay/?ticker_to=xmr&network_to=Mainnet&address=458esf8RaVEN5VjLzFtAtrXAZKXnsMMm7TgJqKKhAdEQCVgBNLN5owKUpLDY22uHhc8aXBiJ2FTwG7BkBksJCz3P11JziQ6&simple_mode=True&fiat_equiv=USD&name=PAYMENT&email=tranquiltreasures@sudomail.com&bgcolor=" width="310" height="350" style="border:0" scrolling="no"></iframe>
+
+    <h2 class="policies">Policies</h2>
+    <ul>
+        <li>☉ You MUST use a full first and last name when ordering: we will not send out suspicious packages.</li>
+        <li>☉ If you cannot follow directions we will refund you and we won't be doing business.</li>
+        <li>☉ If you ordered here keep the questions/etc in the message thread. Do not message us on other platforms.</li>
+        <li>☉ This does not help, this does nothing but confuses everyone and breaks your anonymity.</li>
+        <li>☉ Bookmark this site!</li>
+        <li>☉ Don't spam us, your messages/emails will end up being ignored and you will be blocked.</li>
+        <li>☉ Do proper research before ordering, we do not have time to walk people through ordering.</li>
+        <li>☉ There is no need for any other chit chat unless there is an order issue; we will reach out.</li>
+        <li>☉ Please double-check your address as USPS would have it or you will cause yourself an unwanted delay.</li>
+        <li>☉ If you don't know what a TXID for an XMR transaction is, do not order. Your funds will be lost if you cannot supply proof of transaction.</li>
+        <li>☉ Double-check your mailing address as USPS would have it.</li>
+        <li>☉ Optional: Include your Public PGP Key in your email so that we can contact you securely in unforeseen situations.</li>
+        <li>☉ Please leave the subject-line blank.</li>
+    </ul>
+
+<h2>Important</h2>
+<ul>
+                <li><strong>Encryption Required:</strong> Remember to <strong>encrypt this entire template</strong> using our <a href="https://rentry.co/tt_pgp" target="_blank">public PGP key</a> before sending.</li>
+                <li><strong>Blank Subject Line:</strong> Please leave the <strong>email subject line blank</strong>.</li>
+                <li><strong>Secure Communication:</strong> Refer to our <a href="#contact">Email Security Policy</a> for guidelines on how to securely send your order information.</li>
+            </ul>
+
+            <p><strong>Need Assistance?</strong></p>
+            <p>If you have any questions or need help completing your order, feel free to reach out following our security protocols. We're here to assist you.</p>
+
+
+        <h3>Our Public PGP Key</h3>
+        <p>To ensure secure communication, please add our public PGP key to your keyring and verify our identity when we sign a message.</p>
+        <p><strong>Link to Public PGP Key:</strong> <a href="https://rentry.co/tt_pgp" target="_blank">https://rentry.co/tt_pgp</a></p>
+        <h3>Direct orders and queries to:</h3>
+        <p>Email: tranquiltreasures@sudomail.com</p>
+        <p>Signal: GratefulDeadDrops.94</p>
+    </section>
+
+    <div class="quote">
+        <p>""The future is not something we enter; the future is something we create."</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2024 <strong>TT</strong>. This webpage is a work of fiction.</p>
+</footer>
+
+</body>
+</html>
