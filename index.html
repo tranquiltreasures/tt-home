@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tranquil Treasures - Your source for quality products and updates.">
+    <meta name="description" content="CnC (Cloak 'n Cipher) - Your source for quality products and updates.">
     <meta name="theme-color" content="#4caf50">
     <title>CnC (Cloak 'n Cipher) | Updates</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* CSS Reset and Variables */
         :root {
-            --primary-color: #5cbf60;
-            --primary-dark: #4aa64e;
-            --secondary-color: #1a1a1a;
-            --text-color: #e0e0e0;
-            --light-text: #b0b0b0;
-            --border-color: #444;
+            --primary-color: #4caf50;
+            --primary-dark: #357a38;
+            --secondary-color: #f0f8ff;
+            --text-color: #333333;
+            --light-text: #666666;
+            --border-color: #dddddd;
             --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             --transition: all 0.3s ease;
         }
@@ -28,8 +28,8 @@
 
         /* General Styles */
         body {
-            background-color: var(--secondary-color);
-            color: var(--text-color);
+            background-color: #121212;
+            color: #e0e0e0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 16px;
             line-height: 1.6;
@@ -109,7 +109,7 @@
             margin: 20px auto;
             padding: 25px;
             background-color: #222;
-            border: 1px solid var(--border-color);
+            border: 1px solid #444;
             border-radius: 12px;
             box-shadow: var(--shadow);
         }
@@ -124,7 +124,7 @@
         }
 
         h3 {
-            color: var(--text-color);
+            color: #e0e0e0;
             margin: 20px 0 15px;
             font-size: 1.4rem;
         }
@@ -183,7 +183,7 @@
         /* Quote Section */
         .quote {
             font-style: italic;
-            color: var(--light-text);
+            color: #b0b0b0;
             text-align: center;
             margin: 30px 0;
             position: relative;
@@ -327,19 +327,31 @@
                 <div class="contact-methods">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>cnc6@sudomail.com</span>
+                        <span id="email">cnc6@sudomail.com</span>
+                        <button class="copy-btn" data-content="cnc6@sudomail.com" aria-label="Copy email">
+                            <i class="fas fa-copy"></i>
+                        </button>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-signal"></i>
-                        <span>CloaknCipher.60</span>
+                        <span id="signal">CloaknCipher.60</span>
+                        <button class="copy-btn" data-content="CloaknCipher.60" aria-label="Copy Signal ID">
+                            <i class="fas fa-copy"></i>
+                        </button>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-lock"></i>
-                        <span>467JXX2Y</span>
+                        <span id="threema">467JXX2Y</span>
+                        <button class="copy-btn" data-content="467JXX2Y" aria-label="Copy Threema ID">
+                            <i class="fas fa-copy"></i>
+                        </button>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-comment-dots"></i>
-                        <span>052991300639b7aa6cf190d7f6a27d09e2b99e6dec9b3780cc3c9219900cd15575</span>
+                        <span id="session">052991300639b7aa6cf190d7f6a27d09e2b99e6dec9b3780cc3c9219900cd15575</span>
+                        <button class="copy-btn" data-content="052991300639b7aa6cf190d7f6a27d09e2b99e6dec9b3780cc3c9219900cd15575" aria-label="Copy Session ID">
+                            <i class="fas fa-copy"></i>
+                        </button>
                     </div>
                 </div>
 
@@ -351,10 +363,6 @@
                     <h4><i class="fas fa-shield-alt"></i> Security Tip</h4>
                     <p>Always verify the authenticity of communication channels before sharing sensitive information. Use encryption whenever possible.</p>
                 </div>
-
-                <button class="btn" id="learnMoreBtn">
-                    <i class="fas fa-info-circle"></i> Learn More About Tor
-                </button>
             </div>
 
             <div class="quote">
@@ -391,9 +399,6 @@
 
                 <h3>What is the importance of using encryption?</h3>
                 <p>Encryption is crucial because it protects your data and communications from being intercepted and read by unauthorized parties, ensuring your privacy and security.</p>
-
-                <h3>What happens when I click the "Learn More About Tor" button?</h3>
-                <p>This button would normally redirect to information about using the Tor Browser safely. However, since this is a fictional website, no actual redirection occurs.</p>
             </section>
         </section>
     </main>
