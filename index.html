@@ -3,493 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tranquil Treasures - Your source for quality products and updates.">
-    <meta name="theme-color" content="#4caf50">
-    <title>Tranquil Treasures | Updates</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>CnC (Cloak 'n Cipher)</title>
     <style>
-        /* CSS Reset and Variables */
-        :root {
-            --primary-color: #4caf50;
-            --primary-dark: #357a38;
-            --secondary-color: #f0f8ff;
-            --text-color: #333333;
-            --light-text: #666666;
-            --border-color: #dddddd;
-            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            --transition: all 0.3s ease;
-        }
-
-        * {
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
-        /* General Styles */
-        body {
-            background-color: var(--secondary-color);
-            color: var(--text-color);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* Header Styles */
         header {
-            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-            color: white;
+            background-color: #1e1e1e;
+            padding: 20px;
             text-align: center;
-            padding: 25px 0;
-            box-shadow: var(--shadow);
-            position: relative;
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.2rem;
-            font-weight: 700;
-            letter-spacing: 0.5px;
         }
 
-        .logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .logo i {
-            font-size: 2rem;
-        }
-
-        /* Navigation */
-        nav {
-            background-color: #3b8e3f;
-            padding: 10px 0;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        nav li {
-            margin: 0 15px;
-        }
-
-        nav a {
+        button {
+            background-color: #4CAF50;
+            border: none;
             color: white;
+            padding: 15px 32px;
+            text-align: center;
             text-decoration: none;
-            font-weight: 500;
-            padding: 5px 10px;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
             border-radius: 4px;
-            transition: var(--transition);
         }
 
-        nav a:hover, nav a:focus {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        /* Main Content */
         main {
-            flex: 1;
             padding: 20px;
         }
 
-        /* Container Styles */
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 25px;
-            background-color: white;
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            box-shadow: var(--shadow);
-        }
-
-        /* Heading Styles */
-        h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 12px;
+        section {
             margin-bottom: 20px;
-            font-size: 1.8rem;
         }
 
-        h3 {
-            color: var(--text-color);
-            margin: 20px 0 15px;
-            font-size: 1.4rem;
+        section h2 {
+            color: #ffcc00;
         }
 
-        /* Content Styles */
-        .update-box {
-            background-color: #f9f9f9;
-            border-left: 4px solid var(--primary-color);
-            padding: 15px;
-            margin-bottom: 25px;
-            border-radius: 0 8px 8px 0;
+        section ul {
+            list-style-type: none;
+            padding: 0;
         }
 
-        .contact-methods {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
-        }
-
-        .contact-item {
-            background: #f5f5f5;
-            padding: 12px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .contact-item i {
-            color: var(--primary-color);
-            font-size: 1.2rem;
-        }
-
-        .contact-item span {
-            word-break: break-all;
-        }
-
-        .warning {
-            background-color: #fef2f2;
-            border-left: 4px solid #dc2626;
-            padding: 12px 15px;
-            margin-top: 20px;
-            border-radius: 0 8px 8px 0;
-            font-style: italic;
-        }
-
-        .security-tip {
-            margin-top: 25px;
-            padding: 15px;
-            background-color: #e6f7ff;
-            border-radius: 8px;
-            border-left: 4px solid #1890ff;
-        }
-
-        /* Quote Section */
-        .quote {
-            font-style: italic;
-            color: var(--light-text);
-            text-align: center;
-            margin: 30px 0;
-            position: relative;
-            padding: 20px 40px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-        }
-
-        .quote::before, .quote::after {
-            content: '"';
-            font-size: 3rem;
-            position: absolute;
-            opacity: 0.3;
-            color: var(--primary-color);
-        }
-
-        .quote::before {
-            top: 0;
-            left: 10px;
-        }
-
-        .quote::after {
-            bottom: -20px;
-            right: 10px;
-        }
-
-        /* Button Styles */
-        .btn {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: var(--transition);
-            border: none;
-            cursor: pointer;
-            font-weight: 500;
-            margin-top: 15px;
-        }
-
-        .btn:hover, .btn:focus {
-            background-color: var(--primary-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Dark Mode Toggle */
-        .dark-mode-toggle {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.2rem;
-            cursor: pointer;
-            padding: 5px;
-            transition: var(--transition);
-        }
-
-        .dark-mode-toggle:hover {
-            transform: rotate(30deg);
-        }
-
-        /* Footer Styles */
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #333;
-            color: white;
-            margin-top: 20px;
-        }
-
-        .footer-content {
-            max-width: 800px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 10px;
-        }
-
-        .social-links a {
-            color: white;
-            font-size: 1.2rem;
-            transition: var(--transition);
-        }
-
-        .social-links a:hover {
-            color: var(--primary-color);
-            transform: translateY(-3px);
-        }
-
-        /* Accessibility and Responsive Improvements */
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.8rem;
-            }
-
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-            }
-
-            .contact-methods {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Dark Mode */
-        .dark-mode {
-            --primary-color: #5cbf60;
-            --primary-dark: #4aa64e;
-            --secondary-color: #1a1a1a;
-            --text-color: #e0e0e0;
-            --light-text: #b0b0b0;
-            --border-color: #444;
-            background-color: #121212;
-        }
-
-        .dark-mode .container {
-            background-color: #222;
-        }
-
-        .dark-mode .update-box {
-            background-color: #2a2a2a;
-        }
-
-        .dark-mode .contact-item {
-            background-color: #2c2c2c;
-        }
-
-        .dark-mode .quote {
-            background-color: #2a2a2a;
-        }
-
-        .dark-mode .warning {
-            background-color: #3a2222;
-        }
-
-        .dark-mode .security-tip {
-            background-color: #1a2733;
-        }
-
-        /* Copy Button Animation */
-        .copied {
-            animation: copied-animation 1s;
-        }
-
-        @keyframes copied-animation {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-
-        /* Accessibility Focus */
-        a:focus, button:focus {
-            outline: 2px dashed var(--primary-color);
-            outline-offset: 2px;
+        section ul li {
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
-            <i class="fas fa-moon"></i>
-        </button>
-        <div class="logo">
-            <i class="fas fa-leaf"></i>
-            <h1>Tranquil Treasures</h1>
-        </div>
+        <h1>CnC (Cloak 'n Cipher)</h1>
+        <button>Learn More About Tor</button>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="#"><i class="fas fa-bell"></i> Updates</a></li>
-            <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section class="container">
-            <h2><i class="fas fa-bullhorn"></i> Announcements</h2>
-
-            <div class="update-box">
-                <h3><i class="fas fa-calendar-alt"></i> May 2025 Update</h3>
-                <p>The website has been moved to a .onion domain for enhanced privacy and security. You must download and use the Tor Browser to access it. For more details, please contact us using any of the secure methods below:</p>
-
-                <div class="contact-methods">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span id="email">cnc6@sudomail.com</span>
-                        <button class="copy-btn" data-content="cnc6@sudomail.com" aria-label="Copy email">
-                            <i class="fas fa-copy"></i>
-                        </button>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-signal"></i>
-                        <span id="signal">CloaknCipher.60</span>
-                        <button class="copy-btn" data-content="CloaknCipher.60" aria-label="Copy Signal ID">
-                            <i class="fas fa-copy"></i>
-                        </button>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-lock"></i>
-                        <span id="threema">467JXX2Y</span>
-                        <button class="copy-btn" data-content="467JXX2Y" aria-label="Copy Threema ID">
-                            <i class="fas fa-copy"></i>
-                        </button>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-comment-dots"></i>
-                        <span id="session">052991300639b7aa6cf190d7f6a27d09e2b99e6dec9b3780cc3c9219900cd15575</span>
-                        <button class="copy-btn" data-content="052991300639b7aa6cf190d7f6a27d09e2b99e6dec9b3780cc3c9219900cd15575" aria-label="Copy Session ID">
-                            <i class="fas fa-copy"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="warning">
-                    <p><strong>Important:</strong> All plaintext messages will be ignored to ensure the adherence to basic security protocols.</p>
-                </div>
-
-                <div class="security-tip">
-                    <h4><i class="fas fa-shield-alt"></i> Security Tip</h4>
-                    <p>Always verify the authenticity of communication channels before sharing sensitive information. Use encryption whenever possible.</p>
-                </div>
-
-                <button class="btn" id="learnMoreBtn">
-                    <i class="fas fa-info-circle"></i> Learn More About Tor
-                </button>
-            </div>
-
-            <div class="quote">
-                <p>"The future is not something we enter; it's something we create."</p>
-            </div>
+        <section>
+            <h2>About Us</h2>
+            <p>Tranquil Treasures has rebranded to CnC (Cloak 'n Cipher) to avoid confusion with a previous vendor and to reflect our new product line.</p>
+        </section>
+        <section>
+            <h2>Access Instructions</h2>
+            <p>To access the .onion domain, you need to download and use the Tor Browser.</p>
+            <h3>iOS</h3>
+            <p>Download the Orbot app from the App Store. After installing Orbot, open the Tor Browser app and follow the setup instructions.</p>
+            <h3>Android</h3>
+            <p>Download the Orbot app from the Google Play Store. After installing Orbot, open the Tor Browser app and follow the setup instructions.</p>
+            <p><strong>Emphasis on Desktop Security:</strong> While using the Tor Browser on mobile devices is convenient, desktop usage is generally considered more secure due to the larger screen size, better performance, and fewer potential vulnerabilities compared to mobile operating systems.</p>
+        </section>
+        <section>
+            <h2>Contact Methods</h2>
+            <ul>
+                <li>Email: cnc6@sudomail.com</li>
+                <li>Signal: CloaknCipher.60</li>
+                <li>Threema: 467JXX2Y</li>
+                <li>Session: 052991300639b7aa6cf190d7f6a27d09e2b99e6dec9b3780cc3c9219900cd15575</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Why Verify Communication Channels?</h2>
+            <p>Verifying communication channels ensures that you are communicating with the intended party and helps prevent phishing attacks and other forms of malicious activity.</p>
+        </section>
+        <section>
+            <h2>Importance of Using Encryption</h2>
+            <p>Encryption is crucial because it protects your data and communications from being intercepted and read by unauthorized parties, ensuring your privacy and security.</p>
+        </section>
+        <section>
+            <h2>Learn More About Tor</h2>
+            <p>This button would normally redirect to information about using the Tor Browser safely. However, since this is a fictional website, no actual redirection occurs.</p>
         </section>
     </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="#" aria-label="Fictitious link to secure messenger"><i class="fas fa-lock"></i></a>
-                <a href="#" aria-label="Fictitious link to privacy policy"><i class="fas fa-shield-alt"></i></a>
-                <a href="#" aria-label="Fictitious link to secure contact"><i class="fas fa-envelope-open-text"></i></a>
-            </div>
-            <p>&copy; 2025 Tranquil Treasures. This webpage is a work of fiction.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Dark mode toggle
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        const body = document.body;
-
-        darkModeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-
-            // Toggle icon
-            const icon = darkModeToggle.querySelector('i');
-            if (body.classList.contains('dark-mode')) {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-            } else {
-                icon.classList.remove('fa-sun');
-                icon.classList.add('fa-moon');
-            }
-
-            // Save preference to local storage
-            const isDarkMode = body.classList.contains('dark-mode');
-            localStorage.setItem('darkMode', isDarkMode);
-        });
-
-        // Check for saved user preference
-        const savedDarkMode = localStorage.getItem('darkMode');
-        if (savedDarkMode === 'true') {
-            body.classList.add('dark-mode');
-            darkModeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
-        }
-
-        // Copy functionality
-        document.querySelectorAll('.copy-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                const content = button.getAttribute('data-content');
-                navigator.clipboard.writeText(content).then(() => {
-                    // Show feedback
-                    button.classList.add('copied');
-                    setTimeout(() => {
-                        button.classList.remove('copied');
-                    }, 1000);
-                });
-            });
-        });
-
-        // Learn more button
-        document.getElementById('learnMoreBtn').addEventListener('click', () => {
-            alert("This would redirect to information about using Tor Browser safely. Remember this is a fictional website.");
-        });
-    </script>
 </body>
 </html>
